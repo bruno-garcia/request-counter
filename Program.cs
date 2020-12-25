@@ -17,6 +17,7 @@ WebHost.CreateDefaultBuilder()
                     if (line == "clear")
                     {
                         Interlocked.Exchange(ref counter, 0);
+                        GC.Collect();
                     }
                     Console.WriteLine("Counter at: " + counter);
                 }
