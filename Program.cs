@@ -13,7 +13,11 @@ WebHost.CreateDefaultBuilder()
             {
                 while (true)
                 {
-                    Console.ReadLine();
+                    var line = Console.ReadLine();
+                    if (line == "clear")
+                    {
+                        Interlocked.Exchange(ref counter, 0);
+                    }
                     Console.WriteLine("Counter at: " + counter);
                 }
             });
