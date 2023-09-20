@@ -2,7 +2,7 @@ A server that does nothing but increment a counter. Hit any key to see the curre
 
 I use this to test the throughput of the HTTP transport of different clients.
 
-With .NET 5 installed, you can build and run (in release):
+With .NET 8 installed, you can build and run (in release):
 ```
 dotnet run -c release
 ```
